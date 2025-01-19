@@ -39,8 +39,14 @@
         };
 
         document.getElementById("card").onclick = () => {
-            document.getElementById("song").currentTime = 45;
-            document.getElementById("song").play();
+            let audio = document.getElementById("song");
+
+            if ( !audio.paused ) {
+                console.log("playing");
+            } else {
+                audio.currentTime = 45;
+                document.getElementById("song").play();
+            }
         }
     </script>
 </body>
