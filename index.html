@@ -46,6 +46,8 @@
 
         document.getElementById("card").onclick = () => {
             let audio = document.getElementById("song");
+            
+            audio.loop = true;
 
             if ( !audio.paused ) {
                 console.log("playing");
