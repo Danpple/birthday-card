@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <iframe width="0" height="0" style="display: none;" src="https://www.youtube.com/embed/TPaWmq_4IxVyUP6B?start=40?autoplay=1&start=40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-    
-    <img src="assets/background.jpeg" width="100%">
+    <audio src="assets/dandelions.mp3" id="song"></audio>
 
-    <div class="birthday_card">
+    <div class="birthday_card" id="card">
         <div class="inner_cover">
             <img src="assets/inner_cover.jpeg" width="100%">
         </div>
@@ -36,9 +34,14 @@
     </div>
 
     <script>
-        window.addEventListener('load', function() {
-          document.body.style.display = 'block';
-        });
+        window.onload = () => {
+            document.body.style.visibility = 'visible';
+        };
+
+        document.getElementById("card").onclick = () => {
+            document.getElementById("song").currentTime = 45;
+            document.getElementById("song").play();
+        }
     </script>
 </body>
 </html>
