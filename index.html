@@ -35,7 +35,13 @@
 
     <script>
         window.onload = () => {
-            document.body.style.visibility = 'visible';
+            const audio = document.getElementById("song");
+
+            audio.addEventListener('canplaythrough', () => {
+                document.body.style.visibility = 'visible';
+            });
+
+            audio.load(); // Load the audio file
         };
 
         document.getElementById("card").onclick = () => {
