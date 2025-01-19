@@ -20,7 +20,7 @@ body {
 
 .birthday_card {
     height: 70vh;
-    max-width: 70vw;
+    max-width: 75vw;
     position: absolute;
     border-radius: 5px;
     background-size: cover;
@@ -34,7 +34,7 @@ body {
 .birthday_card:hover,
 .birthday_card:focus,
 .birthday_card:active {
-    margin-left: 27%;
+    margin-left: 25%;
 }
 
 .text {
@@ -73,7 +73,7 @@ body {
 .outer_cover {
     margin: 0;
     height: 70vh;
-    max-width: 70vw;
+    max-width: 75vw;
     overflow: hidden;
     border-radius: 5px;
     position: absolute;
@@ -87,7 +87,7 @@ body {
 .inner_cover {
     margin: 0;
     height: 70vh;
-    max-width: 60vw;
+    max-width: 75vw;
     overflow: hidden;
     position: absolute;
     border-radius: 5px;
@@ -116,6 +116,7 @@ body {
     transform: perspective(1000px) rotateY(-109deg);
 }
 .birthday_card:hover > .inner_cover {
+    max-width: 65vw;
     transform: perspective(1000px) rotateY(-109deg);
     box-shadow: 7px 0 5px 0 rgba(0,0,0,0.13),
                 inset 2px 0 15px 0 rgba(0,0,0,0.1);
