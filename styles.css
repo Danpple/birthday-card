@@ -10,18 +10,12 @@ body {
     max-width: 500px;
     overflow: hidden;
     min-height: 100vh;
+    visibility: hidden;
     align-items: center;
-    background: #340158;
-    justify-content: center;
-}
-body > img {
-    position: fixed;
-    width: 150vw;
-    height: 130vh;
-    z-index: 0;
+    background: url("./assets/background.jpeg") no-repeat;
     background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
 }
 
 .birthday_card {
