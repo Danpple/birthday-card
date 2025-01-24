@@ -7,7 +7,6 @@
 body {
     width: 100vw;
     display: flex;
-    max-width: 500px;
     overflow: hidden;
     min-height: 100vh;
     visibility: hidden;
@@ -19,9 +18,9 @@ body {
 }
 
 .birthday_card {
-    height: 60vh;
-    max-width: 75vw;
-    position: absolute;
+    height: 70vh;
+    width: 350px;
+    max-width: 90%;
     border-radius: 5px;
     background-size: cover;
     transition: 400ms all ease;
@@ -72,8 +71,9 @@ body {
 
 .outer_cover {
     margin: 0;
-    height: 60vh;
-    max-width: 75vw;
+    height: 70vh;
+    width: 350px;
+    max-width: 100%;
     overflow: hidden;
     border-radius: 5px;
     position: absolute;
@@ -86,8 +86,9 @@ body {
 
 .inner_cover {
     margin: 0;
-    height: 60vh;
-    max-width: 75vw;
+    height: 70vh;
+    width: 350px;
+    max-width: 100%;
     overflow: hidden;
     position: absolute;
     border-radius: 5px;
@@ -116,7 +117,8 @@ body {
     transform: perspective(1000px) rotateY(-109deg);
 }
 .birthday_card:hover > .inner_cover {
-    max-width: 65vw;
+    width: 300px;
+    max-width: 85%;
     transform: perspective(1000px) rotateY(-109deg);
     box-shadow: 7px 0 5px 0 rgba(0,0,0,0.13),
                 inset 2px 0 15px 0 rgba(0,0,0,0.1);

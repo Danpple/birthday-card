@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <audio src="assets/dandelions.mp3" id="song"></audio>
+    <audio src="assets/Dandelions.mp3" id="song"></audio>
 
     <div class="birthday_card" id="card">
         <div class="inner_cover">
@@ -46,13 +46,12 @@
 
         document.getElementById("card").onclick = () => {
             let audio = document.getElementById("song");
-            
             audio.loop = true;
 
             if ( !audio.paused ) {
                 console.log("playing");
             } else {
-                audio.currentTime = 45;
+                audio.currentTime = 35;
                 document.getElementById("song").play();
             }
         }
