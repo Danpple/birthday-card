@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+
+    <link rel="icon" href="assets/inner_cover.jpeg" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio src="assets/Dandelions.mp3" id="song"></audio>
+
+    <div class="birthday_card" id="card">
+        <div class="inner_cover">
+            <img src="assets/inner_cover.jpeg" width="100%">
+        </div>
+
+        <div class="outer_cover">
+            <img src="assets/outer_cover.jpeg" width="100%">
+        </div>
+
+        <div class="text">
+            <p class="title">
+                Happy Birthday <br> Onyinye
+            </p>
+            <p>
+                On your special day, I want to celebrate the incredible person you are. I admire your kindness, empathy, and generosity. <br><br> I cherish our conversations together and I'm grateful for our friendship. <br><br> Here's to another year of making memories, sharing laughter! <br><br> Wishing you a birthday as bright and beautiful as you are!
+            </p>
+            <p>
+                <br> With appreciation and friendship, Chukwunonso
+            </p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = () => {
+            const audio = document.getElementById("song");
+
+            audio.addEventListener('canplaythrough', () => {
+                document.body.style.visibility = 'visible';
+            });
+
+            audio.load(); // Load the audio file
+        };
+
+        document.getElementById("card").onclick = () => {
+            let audio = document.getElementById("song");
+            audio.loop = true;
+
+            if ( !audio.paused ) {
+                console.log("playing");
+            } else {
+                audio.currentTime = 35;
+                document.getElementById("song").play();
+            }
+        }
+    </script>
+</body>
+</html>
