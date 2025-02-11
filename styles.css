@@ -17,6 +17,15 @@ body {
     justify-content: center;
 }
 
+.tip {
+    position: absolute;
+    top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: serif;
+}
+
 .birthday_card {
     height: 70vh;
     width: 350px;
